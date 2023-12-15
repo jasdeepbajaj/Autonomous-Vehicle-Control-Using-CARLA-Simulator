@@ -286,9 +286,7 @@ class GlobalRoutePlanner(object):
         """
         start, end = self._localize(origin), self._localize(destination)
 
-        route = nx.astar_path(
-            self._graph, source=start[0], target=end[0],
-            heuristic=self._distance_heuristic, weight='length')
+        route = nx.astar_path(self._graph, source=start[0], target=end[0],heuristic=self._distance_heuristic, weight='length')
         route.append(end[1])
         return route
 

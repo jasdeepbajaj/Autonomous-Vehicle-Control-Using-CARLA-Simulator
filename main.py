@@ -55,7 +55,7 @@ def main():
     L = 2.5
     Kdd = 1.4
 
-    long_controller = PIDLongitudinalController(vehicle, K_P = 1.0 , K_D = 0.0, K_I = 0.75 , dt = 1.0 / 10.0 )
+    long_controller = PIDLongitudinalController(vehicle, K_P = 1.0 , K_D = 0.3, K_I = 0.75 , dt = 1.0 / 10.0 )
     lat_controller = PurePursuitController(L, Kdd)
 
     speed=45
