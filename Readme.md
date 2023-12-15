@@ -38,8 +38,7 @@ This repository contains Python scripts to simulate an autonomous vehicle naviga
 
 ## Usage
 1. Ensure the Carla Simulator is installed and configured properly.
-2. Install the required Python packages using `pip install -r requirements.txt`.
-3. Run `main.py` to start the autonomous navigation simulation.
+2. Run `main.py` to start the autonomous navigation simulation.
 
 ## How It Works
 - `global_route_planner.py` generates a high-level route plan using the Carla map.
